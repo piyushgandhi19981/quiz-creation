@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.option-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+button {
+  font-size: 24px;
+  color: gray;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.results span {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.results li {
+  margin-bottom: 10px;
+}
+
+.results li[data-correct="true"] {
+  color: green;
+}
+
+.results li[data-correct="false"] {
+  color: red;
+}
